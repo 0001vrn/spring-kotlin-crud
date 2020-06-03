@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    image: library/mysql:8.0
+    ports:
+    - '3306:3306'
+    expose:
+      - 3306
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: kotlin
+      MYSQL_DATABASE: kotlinwebdemo
+      MYSQL_USER: kotlin
+      MYSQL_PASSWORD: kotlin
